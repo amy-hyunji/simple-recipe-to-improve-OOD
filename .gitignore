@@ -1,0 +1,4 @@
+asymmetric/conf/datasets/*
+asymmetric/conf/ctx_sources/*
+asymmetric/conf/encoder/*
+asymmetric/conf/train/*

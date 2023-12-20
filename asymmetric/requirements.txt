@@ -1,0 +1,14 @@
+faiss-cpu
+filelock
+numpy
+regex
+torch
+transformers
+tqdm
+wget
+spacy
+hydra-core
+omegaconf
+jsonlines
+soundfile
+editdistance
