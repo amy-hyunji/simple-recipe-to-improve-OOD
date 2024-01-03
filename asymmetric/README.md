@@ -14,11 +14,11 @@ details of configuration in `conf/`
 ### 3. Train
 - full tuning (FT)
 ```
-CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port 1020 train_dense_encoder.py train=biencoder_nq encoder=hf_bert train_datasets=[msmarco_train] dev_datasets=[msmarco_dev] output_dir="./dpr/msmarco_randomneg_full"
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --master_port 1020 train_dense_encoder.py train=biencoder_nq encoder=hf_bert train_datasets=[msmarco_train] dev_datasets=[msmarco_dev] output_dir="./dpr/msmarco_randomneg_full"
 ```
 - Lora
 ```
-CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port 1020 train_dense_encoder.py train=biencoder_nq encoder=hf_lora_bert train_datasets=[msmarco_train_randomneg] dev_datasets=[msmarco_dev] output_dir="./dpr/msmarco_randomneg_full"
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --master_port 1020 train_dense_encoder.py train=biencoder_nq encoder=hf_lora_bert train_datasets=[msmarco_train_randomneg] dev_datasets=[msmarco_dev] output_dir="./dpr/msmarco_randomneg_full"
 ```
 
 ### 4. Inference
