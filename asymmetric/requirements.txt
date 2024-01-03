@@ -12,3 +12,4 @@ omegaconf
 jsonlines
 soundfile
 editdistance
+pytrec_eval
