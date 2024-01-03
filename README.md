@@ -25,4 +25,7 @@ To reproduce our results, take the following steps:
 * [RocketQA](https://github.com/PaddlePaddle/RocketQA)
 
 ## Train / Inference
-* details under each folder
+details of how to run the models are under each folder:
+* [asymmetric](https://github.com/amy-hyunji/simple-recipe-to-improve-OOD/blob/main/asymmetric/README.md)
+* [symmetric](https://github.com/amy-hyunji/simple-recipe-to-improve-OOD/blob/main/symmetric/README.md)
+* [late-interaction](https://github.com/amy-hyunji/simple-recipe-to-improve-OOD/blob/main/late-interaction/README.md)
