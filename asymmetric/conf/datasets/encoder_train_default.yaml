@@ -10,11 +10,11 @@ scifact_dev:
 
 msmarco_train:
   _target_: dpr.data.biencoder_data.JsonQADataset
-  file: /net/nfs.cirrascale/s2-research/amyl/data/msmarco/train.json
+  file: ./data/msmarco/train.json
 
 msmarco_train_neg:
   _target_: dpr.data.biencoder_data.JsonQADataset
-  file: /net/nfs.cirrascale/s2-research/amyl/data/msmarco/train.w_neg.json
+  file: ./data/msmarco/train.w_neg.json
 
 msmarco_train_randomneg:
   _target_: dpr.data.biencoder_data.JsonQADataset
@@ -70,7 +70,7 @@ msmarco_train_loraneg:
 
 msmarco_dev:
   _target_: dpr.data.biencoder_data.JsonQADataset
-  file: /net/nfs.cirrascale/s2-research/amyl/data/msmarco/dev.json
+  file: ./data/msmarco/dev.json
 
 nq_train:
   _target_: dpr.data.biencoder_data.JsonQADataset
