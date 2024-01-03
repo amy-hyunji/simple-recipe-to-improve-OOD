@@ -12,7 +12,7 @@ To reproduce our results, take the following steps:
 ## Dataset
 ### Train Dataset
 * [MSMARCO](https://microsoft.github.io/msmarco/)
-* [NQ](https://github.com/facebookresearch/DPR))
+* [NQ](https://github.com/facebookresearch/DPR)
 ### Test Dataset
 * [Beir](https://github.com/beir-cellar/beir)
 
