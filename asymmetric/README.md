@@ -27,5 +27,5 @@ python generate_dense_embeddings.py model_file=./dpr/downloads/checkpoint/retrie
 ```
 - do retrieval. scores in `./outputs/result.json`
 ```
-python /net/nfs.cirrascale/s2-research/amyl/DPR/dense_retriever.py model_file=./dpr/downloads/checkpoint/retriever/single/nq/bert-base-encoder.cp qa_dataset=beir_msmarco_test ctx_datatsets=beir_msmarco	encoded_ctx_files="./outputs/dpr_single/dpr_single_msmarco_0" out_file=./outputs/result.json n_docs=100;
+python dense_retriever.py model_file=./dpr/downloads/checkpoint/retriever/single/nq/bert-base-encoder.cp qa_dataset=beir_msmarco_test ctx_datatsets=beir_msmarco	encoded_ctx_files="./outputs/dpr_single/dpr_single_msmarco_0" out_file=./outputs/result.json n_docs=100;
 ```
